@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  pg:
+    container_name: server_db
+    image: bitnami/postgresql:13.16.0
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRESQL_USERNAME=docker
+      - POSTGRESQL_PASSWORD=docker
+      - POSTGRESQL_DATABASE=inorbit
