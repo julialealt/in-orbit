@@ -33,7 +33,7 @@ export function Summary() {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
           <InOrbitIcon />
-          <span className="text-lg font-semibold capitalize">
+          <span className="text-lg font-semibold capitalize font-inter">
             {firstDayOfWeek} - {lastDayOfWeek}
           </span>
         </div>
@@ -51,7 +51,7 @@ export function Summary() {
           <ProgressIndicator style={{ width: `${completedPercentage}%` }} />
         </Progress>
 
-        <div className="flex items-center justify-between text-xs text-zinc-400">
+        <div className="flex items-center justify-between text-xs text-zinc-400 font-inter">
           <span>
             Você completou{' '}
             <span className="text-zinc-100">{data.completed}</span> de{' '}
@@ -67,7 +67,7 @@ export function Summary() {
       <PendingGoals />
 
       <div className="flex flex-col gap-6">
-        <h2 className="text-xl font-medium">Sua semana</h2>
+        <h2 className="text-xl font-medium font-inter">Sua semana</h2>
 
         {Object.entries(data.goalsPerDay).map(([date, goals]) => {
           const weekDay = dayjs(date).format('dddd')
@@ -76,8 +76,8 @@ export function Summary() {
           return (
             <div key={date} className="flex flex-col gap-4">
               <h3 className="font-medium">
-                <span className="capitalize">{weekDay}</span>{' '}
-                <span className="text-zinc-400 text-xs">({formattedDate})</span>
+                <span className="capitalize font-inter">{weekDay}</span>{' '}
+                <span className="text-zinc-400 text-xs font-inter">({formattedDate})</span>
               </h3>
 
               <ul className="flex flex-col gap-3">
@@ -87,7 +87,7 @@ export function Summary() {
                   return (
                     <li key={goal.id} className="flex items-center gap-2">
                       <CheckCircle2 className="size-4 text-pink-500" />
-                      <span className="text-sm text-zinc-400">
+                      <span className="text-sm text-zinc-400 font-inter">
                         Você completou "
                         <span className="text-zinc-100">{goal.title}</span>" às{' '}
                         <span className="text-zinc-100">{time}h</span>

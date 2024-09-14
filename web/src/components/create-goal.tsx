@@ -85,7 +85,7 @@ export function CreateGoal() {
               />
 
               {formState.errors.title && (
-                <p className="text-red-400 text-sm">
+                <p className="text-red-400 text-sm font-inter">
                   {formState.errors.title.message}
                 </p>
               )}
@@ -105,7 +105,7 @@ export function CreateGoal() {
                     >
                       <RadioGroupItem value="1">
                         <RadioGroupIndicator />
-                        <span className="text-zinc-300 text-sm font-medium leading-none">
+                        <span className="text-zinc-300 text-sm font-medium leading-none font-inter">
                           1x na semana
                         </span>
                         <img src={lazyEmoji} alt="in.orbit" />
@@ -113,7 +113,7 @@ export function CreateGoal() {
 
                       <RadioGroupItem value="2">
                         <RadioGroupIndicator />
-                        <span className="text-zinc-300 text-sm font-medium leading-none">
+                        <span className="text-zinc-300 text-sm font-medium leading-none font-inter">
                           2x na semana
                         </span>
                         <img src={smileEmoji} alt="in.orbit" />
@@ -121,7 +121,7 @@ export function CreateGoal() {
 
                       <RadioGroupItem value="3">
                         <RadioGroupIndicator />
-                        <span className="text-zinc-300 text-sm font-medium leading-none">
+                        <span className="text-zinc-300 text-sm font-medium leading-none font-inter">
                           3x na semana
                         </span>
                         <img src={coolEmoji} alt="in.orbit" />
@@ -129,7 +129,7 @@ export function CreateGoal() {
 
                       <RadioGroupItem value="4">
                         <RadioGroupIndicator />
-                        <span className="text-zinc-300 text-sm font-medium leading-none">
+                        <span className="text-zinc-300 text-sm font-medium leading-none font-inter">
                           4x na semana
                         </span>
                         <img src={crazyEmoji} alt="in.orbit" />
@@ -137,7 +137,7 @@ export function CreateGoal() {
 
                       <RadioGroupItem value="5">
                         <RadioGroupIndicator />
-                        <span className="text-zinc-300 text-sm font-medium leading-none">
+                        <span className="text-zinc-300 text-sm font-medium leading-none font-inter">
                           5x na semana
                         </span>
                         <img src={starEyesEmoji} alt="in.orbit" />
@@ -145,7 +145,7 @@ export function CreateGoal() {
 
                       <RadioGroupItem value="6">
                         <RadioGroupIndicator />
-                        <span className="text-zinc-300 text-sm font-medium leading-none">
+                        <span className="text-zinc-300 text-sm font-medium leading-none font-inter">
                           6x na semana
                         </span>
                         <img src={explodingHeadEmoji} alt="in.orbit" />
@@ -153,7 +153,7 @@ export function CreateGoal() {
 
                       <RadioGroupItem value="7">
                         <RadioGroupIndicator />
-                        <span className="text-zinc-300 text-sm font-medium leading-none">
+                        <span className="text-zinc-300 text-sm font-medium leading-none font-inter">
                           Todos os dias da semana
                         </span>
                         <img src={fireEmoji} alt="in.orbit" />

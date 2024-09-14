@@ -40,7 +40,7 @@ export function DialogContent(props: DialogPrimitive.DialogContentProps) {
 
 export function DialogTitle(props: DialogPrimitive.DialogTitleProps) {
   return (
-    <DialogPrimitive.DialogTitle {...props} className="text-lg font-semibold" />
+    <DialogPrimitive.DialogTitle {...props} className="text-lg font-semibold font-inter" />
   )
 }
 
@@ -50,7 +50,7 @@ export function DialogDescription(
   return (
     <DialogPrimitive.DialogDescription
       {...props}
-      className="text-zinc-400 text-sm leading-relaxed"
+      className="text-zinc-400 text-sm leading-relaxed font-inter"
     />
   )
 }
